@@ -1,5 +1,5 @@
 .crew {
-  background-image: url(../crew/background-crew-mobile.jpg);
+  background-image: url(/public/src/assets/Images/crew/background-crew-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -108,7 +108,7 @@
 
 @media (min-width: 768px) {
   .crew {
-    background-image: url(../crew/background-crew-tablet.jpg);
+    background-image: url(/public/src/assets/Images/crew/background-crew-tablet.jpg);
     background-position: 0%;
   }
   .container .crew--section {
@@ -160,7 +160,7 @@
   .crew {
     max-width: 1440px;
     box-shadow: 0 0 5em var(--grey);
-    background-image: url(../crew/background-crew-desktop.jpg);
+    background-image: url(/public/src/assets/Images/crew/background-crew-desktop.jpg);
   }
   .container .crew--section .crew--data-container {
     width: 80%;

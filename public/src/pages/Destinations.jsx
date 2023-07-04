@@ -1,7 +1,7 @@
 import { useParams, NavLink, useLocation } from "react-router-dom";
-import data from "../data.json";
+import data from "../../../data.json";
 import Nav from "../components/Nav";
-import "../css/destinations.css";
+import "../assets/css/destinations.css";
 
 export default function Destinations() {
     const { name } = useParams();
@@ -23,7 +23,7 @@ export default function Destinations() {
                     </p>
                     <div className="destinations--data-container">
                         <img
-                            src={`../src/${destination.images.webp}`}
+                            src={`/src/assets/Images/${destination.images.webp}`}
                             alt={`${name} picture`}
                         />
                         <div className="destinations--data-right">

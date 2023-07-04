@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./assets/pages/Home";
-import Destinations from "./assets/pages/Destinations";
-import Crew from "./assets/pages/Crew";
-import Technology from "./assets/pages/Technology";
+import Home from "./pages/Home";
+import Destinations from "./pages/Destinations";
+import Crew from "./pages/Crew";
+import Technology from "./pages/Technology";
 
 const router = createBrowserRouter([
     {

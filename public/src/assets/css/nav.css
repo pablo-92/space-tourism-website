@@ -11,7 +11,7 @@ nav .desktop-menu {
 nav .mobile-menu-btn {
   width: 30px;
   height: 25px;
-  background-image: url(../shared/icon-hamburger.svg);
+  background-image: url(/public/src/assets/Images/shared/icon-hamburger.svg);
   background-size: contain;
   background-repeat: no-repeat;
   outline: none;
@@ -38,7 +38,7 @@ nav .mobile-menu {
 nav .mobile-menu .close-menu-btn {
   width: 30px;
   height: 30px;
-  background-image: url(../shared/icon-close.svg);
+  background-image: url(/public/src/assets/Images/shared/icon-close.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;

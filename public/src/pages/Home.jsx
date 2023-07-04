@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
-import "../css/home.css";
+import "../assets/css/home.css";
 
 export default function Home() {
     return (
@@ -25,7 +25,7 @@ export default function Home() {
                             <Link
                                 className="explore-btn"
                                 to={"/destinations/Moon"}>
-                                Launch
+                                Explore
                             </Link>
                         </div>
                     </div>

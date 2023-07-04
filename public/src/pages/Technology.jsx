@@ -1,7 +1,7 @@
 import { useParams, NavLink } from "react-router-dom";
-import data from "../data.json";
+import data from "../../../data.json";
 import Nav from "../components/Nav";
-import "../css/technology.css";
+import "../assets/css/technology.css";
 
 export default function Technology() {
     const { name } = useParams();
@@ -21,12 +21,12 @@ export default function Technology() {
                         <div className="tech--img-container">
                             <img
                                 className="portrait-img"
-                                src={`../src/${tech.images.portrait}`}
+                                src={`/src/assets/Images/${tech.images.portrait}`}
                                 alt={`${tech.name} picture`}
                             />
                             <img
                                 className="landscape-img"
-                                src={`../src/${tech.images.landscape}`}
+                                src={`/src/assets/Images/${tech.images.landscape}`}
                                 alt={`${tech.name} picture`}
                             />
                         </div>

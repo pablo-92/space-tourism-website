@@ -1,7 +1,7 @@
 import { useParams, NavLink } from "react-router-dom";
-import data from "../data.json";
+import data from "../../../data.json";
 import Nav from "../components/Nav";
-import "../css/crew.css";
+import "../assets/css/crew.css";
 
 export default function Crew() {
     const { name } = useParams();
@@ -18,7 +18,7 @@ export default function Crew() {
                     <div className="crew--data-container">
                         <div className="crew--img-container">
                             <img
-                                src={`../src/${crew.images.webp}`}
+                                src={`/src/assets/Images/${crew.images.webp}`}
                                 alt={`${crew.name} picture`}
                             />
                         </div>

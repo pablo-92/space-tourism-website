@@ -4,7 +4,7 @@
   height: -moz-fit-content;
   height: fit-content;
   min-height: 100vh;
-  background: url(../home/background-home-mobile.jpg);
+  background: url(/public/src/assets/Images/home/background-home-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 60%;
@@ -64,7 +64,7 @@
 
 @media (min-width: 520px) {
   .home--container {
-    background-image: url(../home/background-home-tablet.jpg);
+    background-image: url(/public/src/assets/Images/home/background-home-tablet.jpg);
   }
   .home--container .home--hero-container {
     min-height: calc(100vh - 108px);
@@ -98,7 +98,7 @@
 }
 @media (min-width: 1024px) {
   .home--container {
-    background-image: url(../home/background-home-desktop.jpg);
+    background-image: url(/public/src/assets/Images/home/background-home-desktop.jpg);
     max-width: 1440px;
     box-shadow: -2rem 0 3em var(--grey), 2rem 0 3em var(--earth);
   }

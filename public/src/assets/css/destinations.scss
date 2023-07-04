@@ -1,5 +1,5 @@
 .destinations {
-    background-image: url(../destination/background-destination-mobile.jpg);
+    background-image: url(/public/src/assets/Images/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -123,7 +123,7 @@
 
 @media (min-width: 768px) {
     .destinations {
-        background-image: url(../destination/background-destination-tablet.jpg);
+        background-image: url(/public/src/assets/Images/destination/background-destination-tablet.jpg);
     }
 
     .container {
@@ -184,7 +184,7 @@
     .destinations {
         max-width: 1440px;
         box-shadow: 0 0 5em var(--grey);
-        background-image: url(../destination/background-destination-desktop.jpg);
+        background-image: url(/public/src/assets/Images/destination/background-destination-desktop.jpg);
 
     }
 

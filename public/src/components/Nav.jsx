@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, useLocation, useParams } from "react-router-dom";
-import "../css/nav.css";
+import "../assets/css/nav.css";
 
 export default function Nav() {
     const [open, setOpen] = useState(false);
@@ -9,7 +9,7 @@ export default function Nav() {
 
     return (
         <nav>
-            <img src="../src/assets/shared/logo.svg" alt="logo image" />
+            <img src="/src/assets/Images/shared/logo.svg" alt="logo image" />
             <button
                 className="mobile-menu-btn"
                 title="Open menu"

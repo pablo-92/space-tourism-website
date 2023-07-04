@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/src/assets/favicon-32x32.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+            rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+            rel="stylesheet" />
+        <title>Space Tourism</title>
+    </head>
+
+    <style>
+        :root {
+            --sky: #d0d6f9;
+            --dark-blue: #0b0d17;
+            --white: #eee;
+            --grey: #7b7b7b;
+            --grey-op: rgba(123, 123, 123, 0.4);
+            --nav: rgba(100, 100, 100, 0.1);
+            --earth: #00235d;
+            --mars: #b76a41;
+            --titan: #caa35c;
+            --europa: #81504a;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Barlow Condensed", sans-serif;
+            color: var(--white);
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .body {
+            background: var(--dark-blue);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .title {
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 2.7px;
+            text-align: justify;
+        }
+
+        .title span {
+            font-weight: 900;
+            color: var(--grey);
+            padding-right: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .title {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .title {
+                font-size: 25px;
+            }
+        }
+    </style>
+
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
+</html>

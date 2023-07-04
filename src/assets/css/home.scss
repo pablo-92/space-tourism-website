@@ -1,0 +1,194 @@
+.home--container{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    background: url(../home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 60%;
+
+
+    .home--hero {
+        width: 100%;
+        height: fit-content;
+        min-height: 600px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+        .hero--text {
+            text-align: center;
+    
+            h3 {
+                text-transform: uppercase;
+                color: var(--sky);
+                font-size: 16px;
+                font-weight: 200;
+                letter-spacing: 2.7px;
+            }
+    
+            h1 {
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 80px;
+                font-family: 'Bellefair', sans-serif;
+                line-height: 150px;
+            }
+    
+            p {
+                color: var(--sky);
+                font-size: 15px;
+                line-height: 25px;
+                padding: 10px;
+                letter-spacing: 1.25px;
+            }
+        }
+
+        .explore-btn {
+            
+                width: 150px;
+                height: 150px;
+                flex-shrink: 0;
+                border-radius: 150px;
+                background: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                color: var(--dark-blue);
+                text-decoration: none;
+                font-family: 'Bellefair', sans-serif;
+                font-size: 20px;
+                letter-spacing: 1.25px;
+            
+        }   
+    }
+}
+
+@media (min-width: 520px) {
+    .home--container {
+        background-image: url(../home/background-home-tablet.jpg);
+
+        .home--hero-container {
+            min-height: calc(100vh - 108px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .home--hero {
+                width: 500px;
+    
+                .hero--text {
+            
+                    h3 {
+                        font-size: 18px;
+                        letter-spacing: 3px;
+                    }
+            
+                    h1 {
+                        font-size: 100px;
+                        margin: 10px 0;
+                    }
+            
+                    p {
+                        font-size: 18px;
+                        line-height: 27px;
+                        letter-spacing: 1.5px;
+                    }
+                }
+    
+                .explore-btn {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    font-size: 25px;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .home--container {
+        background-image: url(../home/background-home-desktop.jpg);
+        max-width: 1440px;
+        box-shadow: -2rem 0 3em var(--grey), 2rem 0 3em var(--earth);
+
+        .home--hero-container {
+            width: 100%;
+            min-height: calc(100vh - 120px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .home--hero {
+                width: 100%;
+                flex-direction: row;
+    
+                .hero--text {
+                    width: 440px;
+
+                    h3 {
+                        font-size: 25px;
+                        letter-spacing: 3px;
+                        margin-bottom: 10px;
+                    }
+            
+                    h1 {
+                        font-size: 150px;
+                        margin: 0;
+                    }
+            
+                    p {
+                        font-size: 23px;
+                    }
+                }
+    
+                .explore-btn-container {
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 1;
+
+                    .explore-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 270px;
+                        height: 270px;
+                        font-size: 35px;
+                        letter-spacing: 1.7px;
+                        position: relative;
+
+                    }
+    
+                    .explore-btn::before {
+                            position: absolute;
+                            content: "";
+                            width: 350px;
+                            height: 350px;
+                            border-radius: 50%;
+                            background-color: var(--grey-op);
+                            backdrop-filter: blur(10px);
+                            transform: scale(0);
+                            transform-origin: center;
+                            transition: transform .3s;
+                            z-index: -1;
+                        }
+
+                        .explore-btn:hover::before {
+                            transform: scale(1);
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
